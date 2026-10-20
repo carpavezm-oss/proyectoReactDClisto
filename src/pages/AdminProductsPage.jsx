@@ -13,13 +13,12 @@ const AdminProductsPage = () => {
     e.preventDefault();
     setError('');
 
-    // 1. Validar que los campos de texto no estén vacíos ni tengan solo espacios
+   
     if (!form.nombre.trim() || !form.descripcion.trim() || !form.imagen.trim()) {
       setError('Por favor, completa todos los campos de texto sin usar solo espacios en blanco.');
       return;
     }
 
-    // 2. Validar precios y stock numéricos coherentes
     const precioNum = Number(form.precio);
     const stockNum = Number(form.stock);
 
@@ -33,7 +32,7 @@ const AdminProductsPage = () => {
       return;
     }
 
-    // Guardar el producto limpiando espacios innecesarios
+
     const updated = addProduct({
       ...form,
       nombre: form.nombre.trim(),
