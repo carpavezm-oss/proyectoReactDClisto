@@ -26,7 +26,7 @@ export const initialProducts = [
     precio: 34990,
     precioOferta: null,
     esOferta: false,
-    stock: 3, // Stock crítico (< 5)
+    stock: 3, 
     descripcion: "Aroma floral intenso con matices de rosa de Francia y jazmín silvestre.",
     imagen: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500"
   },
@@ -48,7 +48,7 @@ export const initialProducts = [
     precio: 42990,
     precioOferta: null,
     esOferta: false,
-    stock: 2, // Stock crítico (< 5)
+    stock: 2, 
     descripcion: "Elegancia nocturna con notas de cuero, pimienta negra y pachulí.",
     imagen: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=500"
   },
@@ -108,7 +108,7 @@ export const initialOrders = [
   }
 ];
 
-// Operaciones de Almacenamiento local (localStorage)
+
 
 const getLocal = (key, fallback) => {
   const data = localStorage.getItem(key);
@@ -123,7 +123,7 @@ const setLocal = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
 
-// CRUD PRODUCTOS
+
 export const getStoredProducts = () => getLocal("products", initialProducts);
 export const saveProducts = (products) => setLocal("products", products);
 
@@ -149,7 +149,7 @@ export const deleteProduct = (id) => {
   return updated;
 };
 
-// CRUD CATEGORÍAS
+
 export const getStoredCategories = () => getLocal("categories", initialCategories);
 export const saveCategories = (cats) => setLocal("categories", cats);
 
@@ -168,7 +168,7 @@ export const deleteCategory = (id) => {
   return updated;
 };
 
-// CRUD USUARIOS
+
 export const getStoredUsers = () => getLocal("users", initialUsers);
 export const saveUsers = (users) => setLocal("users", users);
 
@@ -194,7 +194,6 @@ export const deleteUser = (id) => {
   return updated;
 };
 
-// GESTIoN DE oRDENES
 export const getStoredOrders = () => getLocal("orders", initialOrders);
 export const saveOrders = (orders) => setLocal("orders", orders);
 
@@ -210,5 +209,4 @@ export const addOrder = (orderData) => {
   return newOrder;
 };
 
-// BLOGS
 export const getStoredBlogs = () => getLocal("blogs", initialBlogs);
