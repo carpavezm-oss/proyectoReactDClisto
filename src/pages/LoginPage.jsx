@@ -17,14 +17,13 @@ const LoginPage = () => {
     e.preventDefault();
     setError('');
 
-    // Obtenemos la lista de usuarios registrados desde data.js / localStorage
+ 
     const users = getStoredUsers();
     const userFound = users.find(u => u.email.toLowerCase() === email.toLowerCase());
 
     if (userFound) {
       setSuccess(true);
 
-      // Guardamos la sesión en localStorage
       localStorage.setItem('currentUser', JSON.stringify(userFound));
 
       setTimeout(() => {
