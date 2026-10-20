@@ -19,7 +19,7 @@ const AdminBlogPage = () => {
     e.preventDefault();
     setError('');
 
-    // Validar que ningún campo de texto esté vacío o tenga solo espacios en blanco
+
     if (
       !form.titulo.trim() || 
       !form.resumen.trim() || 
