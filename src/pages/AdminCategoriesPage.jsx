@@ -13,22 +13,20 @@ const AdminCategoriesPage = () => {
     e.preventDefault();
     setError('');
 
-    // Lista estricta de categorías permitidas
+
     const allowedSlugs = ['hombre', 'mujer', 'unisex', 'ofertas'];
 
-    // 1. Validar que los campos de texto no estén vacíos ni tengan solo espacios
     if (!form.nombre.trim() || !form.descripcion.trim() || !form.imagen.trim()) {
       setError('Por favor, completa todos los campos de texto sin usar solo espacios en blanco.');
       return;
     }
 
-    // 2. Validar que el slug sea estrictamente uno de los permitidos
     if (!allowedSlugs.includes(form.slug)) {
       setError('Categoría no válida. Solo se permite: hombre, mujer, unisex u ofertas.');
       return;
     }
 
-    // Guardar categoría limpia
+
     const updated = addCategory({
       nombre: form.nombre.trim(),
       slug: form.slug,
