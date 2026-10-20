@@ -16,10 +16,10 @@ const RegisterPage = () => {
     e.preventDefault();
     setError('');
 
-    // 1. Obtener la lista actual de usuarios
+
     const users = getStoredUsers();
 
-    // 2. Verificar si el correo ya existe (sin importar mayúsculas/minúsculas)
+
     const emailExists = users.some(
       (u) => u.email.toLowerCase() === form.email.trim().toLowerCase()
     );
@@ -29,7 +29,7 @@ const RegisterPage = () => {
       return;
     }
 
-    // 3. Si no existe, guardar el nuevo usuario
+
     addUser({
       nombre: form.nombre.trim(),
       email: form.email.trim(),
