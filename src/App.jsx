@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 
-// Páginas Públicas
+
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -20,7 +20,7 @@ import UsPage from './pages/UsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 
-// Páginas Administrativas
+
 import AdminDashboardPage from './pages/AdminDashboardPage';
 import AdminOrdersPage from './pages/AdminOrdersPage';
 import AdminProductsPage from './pages/AdminProductsPage';
@@ -34,7 +34,7 @@ function App() {
     <CartProvider>
       <Router>
         <Routes>
-          {/* Rutas Públicas */}
+    
           <Route path="/" element={<HomePage />} />
           <Route path="/productos" element={<ProductsPage />} />
           <Route path="/producto/:id" element={<ProductDetailPage />} />
@@ -51,7 +51,6 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/registro" element={<RegisterPage />} />
 
-          {/* Rutas Administrativas */}
           <Route path="/admin" element={<AdminDashboardPage />} />
           <Route path="/admin/ordenes" element={<AdminOrdersPage />} />
           <Route path="/admin/productos" element={<AdminProductsPage />} />
