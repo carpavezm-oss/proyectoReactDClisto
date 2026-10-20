@@ -37,10 +37,9 @@ const Navbar = () => {
 
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="mainNavbar">
           
-          {/* ----- FORMULARIO DE BÚSQUEDA CORREGIDO ----- */}
-          {/* Se eliminó w-50 y mx-auto. Ahora usa márgenes responsivos y ancho completo en móvil */}
+
           <form className="d-flex mt-3 mt-lg-0 ms-lg-4 me-lg-auto col-12 col-lg-5" onSubmit={handleSearch}>
-            {/* Input Group para pegar input y botón */}
+  
             <div className="input-group w-100">
               <input
                 className="form-control"
@@ -55,7 +54,7 @@ const Navbar = () => {
               </button>
             </div>
           </form>
-          {/* ------------------------------------------- */}
+  
 
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-1 gap-lg-0">
             <li className="nav-item">
@@ -77,7 +76,7 @@ const Navbar = () => {
               <Link className="nav-link" to="/contacto" onClick={closeMenu}>Contacto</Link>
             </li>
             
-            {/* Botones de sesión y registro alineados */}
+       
             <div className="d-flex flex-column flex-lg-row gap-2 ms-lg-2 my-2 my-lg-0 w-100 w-lg-auto">
                 <li className="nav-item">
                   <Link className="btn btn-outline-light btn-sm w-100" to="/login" onClick={closeMenu}>
@@ -91,7 +90,6 @@ const Navbar = () => {
                 </li>
             </div>
 
-            {/* Carrito corregido para ocupar ancho completo en móvil */}
             <li className="nav-item mt-2 mt-lg-0 w-100 w-lg-auto ms-lg-3">
               <Link className="btn btn-success fw-bold d-flex align-items-center justify-content-center gap-1 w-100" to="/carrito" onClick={closeMenu}>
                 <span>🛒 Carrito</span>
