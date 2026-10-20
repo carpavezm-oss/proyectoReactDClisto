@@ -38,7 +38,7 @@ describe('ProductCard Component', () => {
         <ProductCard product={mockProduct} onAddToCart={() => {}} />
       </BrowserRouter>
     );
-    // Verificamos que se renderice el precio de oferta
+
     expect(getByText('$24.990')).toBeDefined();
   });
 });
