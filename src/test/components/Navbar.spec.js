@@ -29,7 +29,7 @@ describe('Navbar Component', () => {
         </BrowserRouter>
       </CartContext.Provider>
     );
-    // Verifica que se muestre el monto y la cantidad de elementos en el badge del carrito
+
     expect(getByText('$45.980 (2)')).toBeDefined();
   });
 
