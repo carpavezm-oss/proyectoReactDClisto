@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
     <MainLayout>
-      {/* Hero Section */}
+
       <div className="p-5 mb-5 bg-dark text-white rounded-3 shadow-sm position-relative overflow-hidden">
         <div className="container py-5 position-relative z-1">
           <h1 className="display-4 fw-bold text-uppercase">Olores Que Matan</h1>
@@ -37,7 +37,7 @@ const HomePage = () => {
 
       </div>
 
-      {/* Categorías Destacadas */}
+
       <section className="mb-5">
         <h2 className="fw-bold mb-4 text-center">Explora por Categorías</h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -49,7 +49,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Productos en Oferta */}
       <section className="mb-5 py-4 bg-light rounded-3 px-3">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2 className="fw-bold mb-0">Ofertas Destacadas</h2>
@@ -58,7 +57,6 @@ const HomePage = () => {
         <ProductGrid products={featuredProducts} onAddToCart={addToCart} />
       </section>
 
-      {/* Blog / Consejos */}
       <section className="mb-4">
         <h2 className="fw-bold mb-4 text-center">Consejos de Perfumería</h2>
         <div className="row row-cols-1 row-cols-md-2 g-4">
