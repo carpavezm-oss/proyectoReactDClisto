@@ -1,16 +1,4 @@
-# React + Vite
+El proyecto "Olores Que Matan" es un e-commerce moderno enfocado en la venta de fragancias y perfumes exclusivos, desarrollado utilizando React con Vite para lograr un entorno rápido y optimizado. Para mantener una arquitectura limpia, escalable y modular, se implementó la metodología Atomic Design, organizando los componentes desde elementos básicos (átomos e inputs), pasando por combinaciones (moléculas), hasta estructuras complejas (organismos como el Navbar o el AdminSideBar) y plantillas de diseño responsivo (MainLayout y AdminLayout). El diseño visual y adaptativo (diseño responsivo) se estructuró empleando Bootstrap 5, asegurando que tanto la tienda pública como el panel de administración se adapten perfectamente a cualquier dispositivo. La navegación dinámica entre vistas se maneja mediante React Router DOM, mientras que el estado global de la tienda (como el carrito de compras) se administra eficientemente usando Context API. Finalmente, para garantizar la calidad y robustez del sistema, cuenta con validaciones estrictas en formularios (incluyendo el uso de .trim() para evitar espacios en blanco y control estricto de categorías permitidas como hombre, mujer, unisex y ofertas). Todo el proyecto se encuentra integrado con GitHub y desplegado en la nube a través de Vercel, aprovechando su CDN global y su velocidad para la entrega continua de aplicaciones web.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+integrantes: daniel delgado y carolina pavez
