@@ -12,7 +12,7 @@ const ContactPage = () => {
     e.preventDefault();
     setError('');
 
-    // Validar que ningún campo esté vacío o contenga solo espacios en blanco
+
     if (!form.nombre.trim() || !form.email.trim() || !form.mensaje.trim()) {
       setError('Por favor, ingresa información válida. No se aceptan campos vacíos o solo espacios.');
       return;
