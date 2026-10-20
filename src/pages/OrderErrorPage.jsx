@@ -16,4 +16,4 @@ const OrderErrorPage = () => {
   );
 };
 
-export default OrderErrorPage; // (O OrderErrorPage)
+export default OrderErrorPage; 
